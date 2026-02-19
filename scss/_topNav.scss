@@ -1,5 +1,54 @@
 .topNav {
-  background: red;
-  color: white;
-  text-align: center;
+  background-color: #000;
+  color: #969696;
+  padding: 14px 0;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+
+    &--card {
+      font-weight: 400;
+      padding: 0 10px;
+
+      &:first-child {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+
+      &:not(:last-child) {
+        border-right: 1px solid #969696;
+      }
+    }
+  }
+
+  &__login {
+    background: transparent;
+    border: none;
+    color: #969696;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 740px) {
+  .topNav__info {
+    flex-direction: column;
+    align-items: start;
+
+    &--card {
+      font-size: 12px;
+      border: none !important;
+    }
+  }
 }

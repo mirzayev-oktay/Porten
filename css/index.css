@@ -1,11 +1,93 @@
 .topNav {
-  background: red;
-  color: white;
-  text-align: center;
+  background-color: #000;
+  color: #969696;
+  padding: 14px 0;
+}
+.topNav__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topNav__info {
+  display: flex;
+  align-items: center;
+}
+.topNav__info--card {
+  font-weight: 400;
+  padding: 0 10px;
+}
+.topNav__info--card:first-child {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.topNav__info--card:not(:last-child) {
+  border-right: 1px solid #969696;
+}
+.topNav__login {
+  background: transparent;
+  border: none;
+  color: #969696;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 400;
+  font-size: 16px;
 }
 
+@media (max-width: 740px) {
+  .topNav__info {
+    flex-direction: column;
+    align-items: start;
+  }
+  .topNav__info--card {
+    font-size: 12px;
+    border: none !important;
+  }
+}
+.navbar {
+  background-color: #0f0f0f;
+  padding: 28px 0;
+}
+.navbar__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.navbar__links a {
+  color: #969696;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.navbar__menu {
+  display: none;
+}
+
+@media (max-width: 790px) {
+  .navbar__links {
+    display: none;
+  }
+  .navbar__menu {
+    display: block;
+    color: #969696;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 10px;
 }/*# sourceMappingURL=index.css.map */
