@@ -1,0 +1,35 @@
+@use "variables" as *;
+
+.new-collection {
+  background-image: url("../images/new-collection.png");
+  min-height: 730px;
+  background-position: center;
+  background-size: cover;
+  padding-top: 250px;
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 52px;
+
+    h1 {
+      font-weight: 700;
+      font-size: 36px;
+      color: white;
+      font-family: $secondaryFont;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    button {
+      padding: 12px 28px;
+      text-transform: uppercase;
+      background-color: transparent;
+      color: white;
+      border: 1px solid #fff;
+      font-size: 18px;
+      letter-spacing: 10%;
+    }
+  }
+}
