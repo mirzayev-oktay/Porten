@@ -1,4 +1,18 @@
 .hero {
-  background-image: url(../images/hero.png);
+  background-image: url(../images/hero logo.png);
   height: 80vh;
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+p {
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 730px;
+  color: white;
+  font-family: $PrimaryFont;
+}
+@media (max-width: 1349px) {
 }

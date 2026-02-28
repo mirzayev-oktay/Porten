@@ -83,6 +83,18 @@
   background-image: url(../images/hero.png);
   height: 80vh;
 }
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 730px;
+  color: white;
+}
 
 * {
   margin: 0;
