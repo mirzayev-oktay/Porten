@@ -1,0 +1,60 @@
+@use "variables" as *;
+
+.products {
+  padding: 120px 0;
+
+  h1 {
+    position: relative;
+    text-align: center;
+    font-size: 36px;
+    font-family: $secondaryFont;
+    font-weight: 400;
+    text-transform: uppercase;
+    &::after {
+      content: "";
+      width: 120px;
+      height: 2px;
+      background-color: #fff;
+      position: absolute;
+      bottom: -40px;
+      margin-bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &-cards {
+    margin-top: 81px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+
+    .product-card {
+      img {
+        margin-bottom: 25px;
+      }
+      h3 {
+        font-size: 15px;
+        font-weight: 400;
+        font-family: $secondaryFont;
+        margin-bottom: 10px;
+      }
+      p {
+        font-weight: 700;
+        font-size: 16px;
+        font-family: $secondaryFont;
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .products {
+    padding: 50px 0;
+
+    h1 {
+      font-size: 28px;
+    }
+  }
+}
