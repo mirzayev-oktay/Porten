@@ -253,6 +253,44 @@
     font-size: 28px;
   }
 }
+.our-brands {
+  padding: 60px 0;
+  background-color: #0f0f0f;
+}
+.our-brands h1 {
+  position: relative;
+  font-size: 36px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+.our-brands h1::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -40px;
+  margin-bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.our-brands .brands {
+  margin-top: 40px;
+  display: flex;
+  gap: 30px;
+}
+
+@media (max-width: 1160px) {
+  .brands {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .our-brands h1 {
+    font-size: 28px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
