@@ -1,0 +1,10 @@
+@use "variables" as *;
+
+.mini-footer {
+  color: #ffffff66;
+  padding: 17px 0;
+}
+.mini-footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
